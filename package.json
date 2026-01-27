@@ -1,0 +1,20 @@
+{
+  "name": "umaru-bot",
+  "version": "1.0.0",
+  "description": "Bot de WhatsApp estable con Dashboard Visual",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "background": "pm2 start index.js --name umaru --cron-restart='0 */6 * * *'",
+    "stop": "pm2 delete umaru",
+    "status": "pm2 status"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@whiskeysockets/baileys": "latest",
+    "axios": "^1.13.3",
+    "pino": "latest",
+    "qrcode-terminal": "latest",
+    "translate-google-api": "^1.0.4"
+  }
+}

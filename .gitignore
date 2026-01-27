@@ -1,0 +1,4 @@
+node_modules
+session
+.npm
+package-lock.json
